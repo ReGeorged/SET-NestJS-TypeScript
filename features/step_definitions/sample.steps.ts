@@ -1,7 +1,11 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import { expect } from 'chai';  // using chai for assertions in this example
+import { PlaywrightService } from '../../src/services/playwright.service'
+import { expect } from 'chai';
+import { TestWorld } from '../support/world';
 
 Given('I open the Google homepage', async function() {
+    const pw = this.app.get(PlaywrightService); 
+
   await this.page.goto('https://www.google.com');
 });
 

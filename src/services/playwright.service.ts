@@ -7,7 +7,7 @@ export class PlaywrightService implements OnModuleInit, OnApplicationShutdown {
 
   async onModuleInit() {
     // Launch a single browser instance when the Nest app starts (one-time setup)
-    this.browser = await chromium.launch({ headless: true });
+    this.browser = await chromium.launch({ headless: false });
   }
 
   async onApplicationShutdown() {
