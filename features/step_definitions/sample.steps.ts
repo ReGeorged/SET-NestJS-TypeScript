@@ -5,10 +5,10 @@ import { TestWorld } from '../support/world';
 import { Page } from 'playwright';
 
 // The change is on this line:
-@binding([TestWorld])
+@binding([])
 export class HomePageSteps {
     private readonly playwrightService: PlaywrightService
-    private page: Page;
+    private page: Page | undefined;
 
     // The 'world' parameter will now be correctly populated with an instance of TestWorld.
     constructor(protected readonly world: TestWorld) {

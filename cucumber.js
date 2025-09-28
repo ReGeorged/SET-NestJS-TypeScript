@@ -1,10 +1,10 @@
 const args = [
+  '--require-module ts-node/register',
   '--require ./features/support/**/*.ts',
   '--require ./features/step_definitions/**/*.ts',
-  './features/**/*.feature',
   '--format progress',
-  `--parallel 1`
+  './features/**/*.feature',
+  '--parallel 1',
 ].join(' ');
 
 module.exports = { default: args };
-

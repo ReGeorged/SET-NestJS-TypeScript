@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { INestApplicationContext, Type } from '@nestjs/common';
 import { app } from './hooks'; // Import the shared app instance
