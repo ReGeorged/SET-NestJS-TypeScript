@@ -10,8 +10,9 @@
 		"noImplicitAny": false,
 		"declaration": true,
 		"removeComments": true,
-
-		"allowSyntheticDefaultImports": true,		
+		"strictNullChecks": true,
+    	"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
 		"typeRoots": ["../../node_modules/@types"]
 	}
 }

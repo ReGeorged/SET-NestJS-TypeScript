@@ -31,5 +31,3 @@ export class TestWorld extends World {
     return this.getApp.get(type);
   }
 }
-
-// setWorldConstructor(TestWorld);
