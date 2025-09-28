@@ -1,10 +1,12 @@
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { INestApplicationContext, Type } from '@nestjs/common';
 import { app } from './hooks'; // Import the shared app instance
+import { Page } from 'playwright';
 
 export class TestWorld extends World {
   // Make this public so it can be accessed from step definitions
   private app: INestApplicationContext;
+  private page?: Page
 
   constructor(options: IWorldOptions) {
     super(options);
@@ -17,6 +19,19 @@ export class TestWorld extends World {
     if(!app) throw new Error("Application context not initialized")
       return this.app;
     }
+
+
+  public get getPage(){
+    if(!this.page){ throw new Error("Page does not exist")}
+    return this.page;
+  }
+
+  public set setPage(page:Page){
+    if(!page) {throw new Error("Page cant be null")}
+    this.page = page;
+  }
+    
+
   /**
    * A convenience method to retrieve a provider (service, repository, etc.)
    * from the NestJS application context.

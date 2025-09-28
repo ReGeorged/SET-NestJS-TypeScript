@@ -10,6 +10,7 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "@cucumber/pretty-formatter": "^2.3.0",
     "@lynxwall/cucumber-tsflow": "^7.3.2",
     "@nestjs/common": "^11.1.6",
     "@nestjs/config": "^4.0.2",
