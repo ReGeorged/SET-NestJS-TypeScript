@@ -1,4 +1,5 @@
 # E2E Browser Test Automation POC with NestJs + TypeScript
+## ! This is POC project dont look for best practices here )
 * Libs used :
   * Playwright (Browser Automation)
   * @cucumber/cucumber (BDD)
