@@ -7,7 +7,7 @@
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
-		"noImplicitAny": false,
+		"noImplicitAny": true,
 		"declaration": true,
 		"removeComments": true,
 		"strictNullChecks": true,
