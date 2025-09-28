@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test:e2e": "cucumber-js"
+    "test:e2e": "cucumber-tsflow"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
@@ -9,6 +9,7 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "@lynxwall/cucumber-tsflow": "^7.3.2",
     "@nestjs/common": "^11.1.6",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.1.6",

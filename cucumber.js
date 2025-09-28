@@ -1,8 +1,7 @@
 const args = [
-  'features/**/*.feature',
-  '--require-module ts-node/register',
-  '--require features/step_definitions/**/*.ts',
-  '--require features/support/**/*.ts',
+  '--require ./features/support/**/*.ts',
+  '--require ./features/step_definitions/**/*.ts',
+  './features/**/*.feature',
   '--format progress',
   `--parallel 1`
 ].join(' ');
