@@ -6,7 +6,6 @@ export function StepsBinding(): ClassDecorator {
     return binding([TestWorld]);
 }
 
-@binding([TestWorld])
 export abstract class BaseSteps {
     protected readonly playwrightService!: PlaywrightService
 
